@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "14",
+    "group": "test_get_partners",
+    "name": "test_get_partners_success",
+    "path": "api/test_get_partners.spec.ts › test_get_partners › test_get_partners_success",
+    "file": "api/test_get_partners.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "story": "User can get partners"
+      },
+      {
+        "tag": [
+          "release_01",
+          "positive"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "group": "test_get_partners",
+    "name": "test_get_partners_unauthorized",
+    "path": "api/test_get_partners.spec.ts › test_get_partners › test_get_partners_unauthorized",
+    "file": "api/test_get_partners.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "story": "User can get partners"
+      },
+      {
+        "tag": [
+          "release_01",
+          "negative"
+        ]
+      },
+      {
+        "layer": "integration"
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "group": "test_login",
+    "name": "test_login_success",
+    "path": "api/test_login.spec.ts › test_login › test_login_success",
+    "file": "api/test_login.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "story": "User can login"
+      },
+      {
+        "tag": [
+          "release_01",
+          "positive"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "group": "test_login",
+    "name": "test_login_invalid_credentials_0",
+    "path": "api/test_login.spec.ts › test_login › test_login_invalid_credentials_0",
+    "file": "api/test_login.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "release_01",
+          "negative"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "group": "test_login",
+    "name": "test_login_invalid_credentials_1",
+    "path": "api/test_login.spec.ts › test_login › test_login_invalid_credentials_1",
+    "file": "api/test_login.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "release_01",
+          "negative"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "group": "test_login",
+    "name": "test_login_invalid_credentials_2",
+    "path": "api/test_login.spec.ts › test_login › test_login_invalid_credentials_2",
+    "file": "api/test_login.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "release_01",
+          "negative"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "group": "test_login",
+    "name": "test_login_invalid_credentials_3",
+    "path": "api/test_login.spec.ts › test_login › test_login_invalid_credentials_3",
+    "file": "api/test_login.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "release_01",
+          "negative"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "group": "test_login",
+    "name": "test_login_invalid_credentials_4",
+    "path": "api/test_login.spec.ts › test_login › test_login_invalid_credentials_4",
+    "file": "api/test_login.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "release_01",
+          "negative"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "group": "test_login",
+    "name": "test_login_invalid_credentials_5",
+    "path": "api/test_login.spec.ts › test_login › test_login_invalid_credentials_5",
+    "file": "api/test_login.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "release_01",
+          "negative"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "group": "test_login",
+    "name": "test_login_invalid_credentials_6",
+    "path": "api/test_login.spec.ts › test_login › test_login_invalid_credentials_6",
+    "file": "api/test_login.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "release_01",
+          "negative"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "group": "test_login",
+    "name": "test_login_invalid_credentials_7",
+    "path": "api/test_login.spec.ts › test_login › test_login_invalid_credentials_7",
+    "file": "api/test_login.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "release_01",
+          "negative"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "group": "test_scode",
+    "name": "test_scode_image",
+    "path": "api/test_scode.spec.ts › test_scode › test_scode_image",
+    "file": "api/test_scode.spec.ts",
+    "labels": [
+      {
+        "tag": [
+          "release_01",
+          "positive"
+        ]
+      },
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "story": "User can get scode"
+      },
+      {
+        "layer": "integration"
+      },
+      {
+        "severity": "critical"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "group": "test_contact_form",
+    "name": "test_contact_form happy_path Minimum values",
+    "path": "functional/test_contact_form.spec.ts › test_contact_form › test_contact_form happy_path Minimum values",
+    "file": "functional/test_contact_form.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "story": "User can send message"
+      },
+      {
+        "tag": [
+          "release_03",
+          "positive"
+        ]
+      },
+      {
+        "layer": "integration"
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "group": "test_contact_form",
+    "name": "test_contact_form happy_path Random valid values",
+    "path": "functional/test_contact_form.spec.ts › test_contact_form › test_contact_form happy_path Random valid values",
+    "file": "functional/test_contact_form.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "story": "User can send message"
+      },
+      {
+        "tag": [
+          "release_03",
+          "positive"
+        ]
+      },
+      {
+        "layer": "integration"
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "group": "test_contact_form",
+    "name": "test_contact_form happy_path Maximum values",
+    "path": "functional/test_contact_form.spec.ts › test_contact_form › test_contact_form happy_path Maximum values",
+    "file": "functional/test_contact_form.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "story": "User can send message"
+      },
+      {
+        "tag": [
+          "release_03",
+          "positive"
+        ]
+      },
+      {
+        "layer": "integration"
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "group": "test_contact_form",
+    "name": "test_contact_form send empty",
+    "path": "functional/test_contact_form.spec.ts › test_contact_form › test_contact_form send empty",
+    "file": "functional/test_contact_form.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "tag": [
+          "release_03",
+          "negative"
+        ]
+      },
+      {
+        "layer": "integration"
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "group": "test_contact_form",
+    "name": "test_contact_form Out of minimum values",
+    "path": "functional/test_contact_form.spec.ts › test_contact_form › test_contact_form Out of minimum values",
+    "file": "functional/test_contact_form.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "tag": [
+          "release_03",
+          "negative"
+        ]
+      },
+      {
+        "layer": "integration"
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "group": "test_contact_form",
+    "name": "test_contact_form Random invalid values",
+    "path": "functional/test_contact_form.spec.ts › test_contact_form › test_contact_form Random invalid values",
+    "file": "functional/test_contact_form.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "tag": [
+          "release_03",
+          "negative"
+        ]
+      },
+      {
+        "layer": "integration"
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "group": "test_contact_form",
+    "name": "test_contact_form Out of maximum values",
+    "path": "functional/test_contact_form.spec.ts › test_contact_form › test_contact_form Out of maximum values",
+    "file": "functional/test_contact_form.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "tag": [
+          "release_03",
+          "negative"
+        ]
+      },
+      {
+        "layer": "integration"
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "group": "TestUrlAvailable",
+    "name": "Checking main (/)",
+    "path": "health/test_url_available.spec.ts › TestUrlAvailable › Checking main (/)",
+    "file": "health/test_url_available.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "smoke",
+          "regression",
+          "positive"
+        ]
+      },
+      {
+        "severity": "blocker"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "group": "TestUrlAvailable",
+    "name": "Checking services (/szolgaltatasok)",
+    "path": "health/test_url_available.spec.ts › TestUrlAvailable › Checking services (/szolgaltatasok)",
+    "file": "health/test_url_available.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "smoke",
+          "regression",
+          "positive"
+        ]
+      },
+      {
+        "severity": "blocker"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "group": "TestUrlAvailable",
+    "name": "Checking portfolio (/portfolio)",
+    "path": "health/test_url_available.spec.ts › TestUrlAvailable › Checking portfolio (/portfolio)",
+    "file": "health/test_url_available.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "smoke",
+          "regression",
+          "positive"
+        ]
+      },
+      {
+        "severity": "blocker"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "group": "TestUrlAvailable",
+    "name": "Checking blog (/cikkek)",
+    "path": "health/test_url_available.spec.ts › TestUrlAvailable › Checking blog (/cikkek)",
+    "file": "health/test_url_available.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "smoke",
+          "regression",
+          "positive"
+        ]
+      },
+      {
+        "severity": "blocker"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "group": "TestUrlAvailable",
+    "name": "Checking contact (/ajanlatkeres)",
+    "path": "health/test_url_available.spec.ts › TestUrlAvailable › Checking contact (/ajanlatkeres)",
+    "file": "health/test_url_available.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "smoke",
+          "regression",
+          "positive"
+        ]
+      },
+      {
+        "severity": "blocker"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "group": "TestUrlAvailable",
+    "name": "Checking login (/api/login.php)",
+    "path": "health/test_url_available.spec.ts › TestUrlAvailable › Checking login (/api/login.php)",
+    "file": "health/test_url_available.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "smoke",
+          "regression",
+          "positive"
+        ]
+      },
+      {
+        "severity": "blocker"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "group": "TestUrlAvailable",
+    "name": "Checking get_partners (/api/get_partners.php)",
+    "path": "health/test_url_available.spec.ts › TestUrlAvailable › Checking get_partners (/api/get_partners.php)",
+    "file": "health/test_url_available.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "smoke",
+          "regression",
+          "positive"
+        ]
+      },
+      {
+        "severity": "blocker"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "group": "TestUrlAvailable",
+    "name": "Checking get_scode (/api/scode.php)",
+    "path": "health/test_url_available.spec.ts › TestUrlAvailable › Checking get_scode (/api/scode.php)",
+    "file": "health/test_url_available.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "API"
+      },
+      {
+        "tag": [
+          "smoke",
+          "regression",
+          "positive"
+        ]
+      },
+      {
+        "severity": "blocker"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "group": "test_response_time",
+    "name": "Checking url: https://www.romlex.hu/",
+    "path": "performance/test_load_time.spec.ts › test_response_time › Checking url: https://www.romlex.hu/",
+    "file": "performance/test_load_time.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "positive"
+        ]
+      },
+      {
+        "severity": "minor"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "group": "test_response_time",
+    "name": "Checking url: https://www.romlex.hu/szolgaltatasok",
+    "path": "performance/test_load_time.spec.ts › test_response_time › Checking url: https://www.romlex.hu/szolgaltatasok",
+    "file": "performance/test_load_time.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "positive"
+        ]
+      },
+      {
+        "severity": "minor"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "group": "test_response_time",
+    "name": "Checking url: https://www.romlex.hu/portfolio",
+    "path": "performance/test_load_time.spec.ts › test_response_time › Checking url: https://www.romlex.hu/portfolio",
+    "file": "performance/test_load_time.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "positive"
+        ]
+      },
+      {
+        "severity": "minor"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "group": "test_response_time",
+    "name": "Checking url: https://www.romlex.hu/cikkek",
+    "path": "performance/test_load_time.spec.ts › test_response_time › Checking url: https://www.romlex.hu/cikkek",
+    "file": "performance/test_load_time.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "positive"
+        ]
+      },
+      {
+        "severity": "minor"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "group": "test_response_time",
+    "name": "Checking url: https://www.romlex.hu/ajanlatkeres",
+    "path": "performance/test_load_time.spec.ts › test_response_time › Checking url: https://www.romlex.hu/ajanlatkeres",
+    "file": "performance/test_load_time.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "positive"
+        ]
+      },
+      {
+        "severity": "minor"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "group": "test_response_time",
+    "name": "Checking url: https://www.romlex.hu/api/login.php",
+    "path": "performance/test_load_time.spec.ts › test_response_time › Checking url: https://www.romlex.hu/api/login.php",
+    "file": "performance/test_load_time.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "positive"
+        ]
+      },
+      {
+        "severity": "minor"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "group": "test_response_time",
+    "name": "Checking url: https://www.romlex.hu/api/get_partners.php",
+    "path": "performance/test_load_time.spec.ts › test_response_time › Checking url: https://www.romlex.hu/api/get_partners.php",
+    "file": "performance/test_load_time.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "positive"
+        ]
+      },
+      {
+        "severity": "minor"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "group": "test_response_time",
+    "name": "Checking url: https://www.romlex.hu/api/scode.php",
+    "path": "performance/test_load_time.spec.ts › test_response_time › Checking url: https://www.romlex.hu/api/scode.php",
+    "file": "performance/test_load_time.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "positive"
+        ]
+      },
+      {
+        "severity": "minor"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "group": "test_ui_form_test",
+    "name": "UI form test: input name",
+    "path": "ui/test_contact_form_ui.spec.ts › test_ui_form_test › UI form test: input name",
+    "file": "ui/test_contact_form_ui.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "story": "User can send message"
+      },
+      {
+        "tag": [
+          "release_03",
+          "ui",
+          "positive"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "group": "test_ui_form_test",
+    "name": "UI form test: input email",
+    "path": "ui/test_contact_form_ui.spec.ts › test_ui_form_test › UI form test: input email",
+    "file": "ui/test_contact_form_ui.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "story": "User can send message"
+      },
+      {
+        "tag": [
+          "release_03",
+          "ui",
+          "positive"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "group": "test_ui_form_test",
+    "name": "UI form test: input telefon",
+    "path": "ui/test_contact_form_ui.spec.ts › test_ui_form_test › UI form test: input telefon",
+    "file": "ui/test_contact_form_ui.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "story": "User can send message"
+      },
+      {
+        "tag": [
+          "release_03",
+          "ui",
+          "positive"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "group": "test_ui_form_test",
+    "name": "UI form test: select honnan",
+    "path": "ui/test_contact_form_ui.spec.ts › test_ui_form_test › UI form test: select honnan",
+    "file": "ui/test_contact_form_ui.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "story": "User can send message"
+      },
+      {
+        "tag": [
+          "release_03",
+          "ui",
+          "positive"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "group": "test_ui_form_test",
+    "name": "UI form test: input captcha",
+    "path": "ui/test_contact_form_ui.spec.ts › test_ui_form_test › UI form test: input captcha",
+    "file": "ui/test_contact_form_ui.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "User"
+      },
+      {
+        "story": "User can send message"
+      },
+      {
+        "tag": [
+          "release_03",
+          "ui",
+          "positive"
+        ]
+      },
+      {
+        "severity": "normal"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "group": "test_menu",
+    "name": "Test menu in header",
+    "path": "ui/test_menu.spec.ts › test_menu › Test menu in header",
+    "file": "ui/test_menu.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "story": "User can navigate"
+      },
+      {
+        "severity": "critical"
+      },
+      {
+        "tag": [
+          "release_01",
+          "regression",
+          "positive"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "group": "test_page_layout",
+    "name": "Checking url: https://www.romlex.hu/",
+    "path": "ui/test_page_layout.spec.ts › test_page_layout › Checking url: https://www.romlex.hu/",
+    "file": "ui/test_page_layout.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "feature": "Page Layout"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "smoke",
+          "positive"
+        ]
+      },
+      {
+        "severity": "critical"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "group": "test_page_layout",
+    "name": "Checking url: https://www.romlex.hu/szolgaltatasok",
+    "path": "ui/test_page_layout.spec.ts › test_page_layout › Checking url: https://www.romlex.hu/szolgaltatasok",
+    "file": "ui/test_page_layout.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "feature": "Page Layout"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "smoke",
+          "positive"
+        ]
+      },
+      {
+        "severity": "critical"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "group": "test_page_layout",
+    "name": "Checking url: https://www.romlex.hu/portfolio",
+    "path": "ui/test_page_layout.spec.ts › test_page_layout › Checking url: https://www.romlex.hu/portfolio",
+    "file": "ui/test_page_layout.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "feature": "Page Layout"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "smoke",
+          "positive"
+        ]
+      },
+      {
+        "severity": "critical"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "group": "test_page_layout",
+    "name": "Checking url: https://www.romlex.hu/cikkek",
+    "path": "ui/test_page_layout.spec.ts › test_page_layout › Checking url: https://www.romlex.hu/cikkek",
+    "file": "ui/test_page_layout.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "feature": "Page Layout"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "smoke",
+          "positive"
+        ]
+      },
+      {
+        "severity": "critical"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "group": "test_page_layout",
+    "name": "Checking url: https://www.romlex.hu/ajanlatkeres",
+    "path": "ui/test_page_layout.spec.ts › test_page_layout › Checking url: https://www.romlex.hu/ajanlatkeres",
+    "file": "ui/test_page_layout.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "feature": "Page Layout"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "smoke",
+          "positive"
+        ]
+      },
+      {
+        "severity": "critical"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "group": "test_page_layout",
+    "name": "Checking url: https://www.romlex.hu/api/login.php",
+    "path": "ui/test_page_layout.spec.ts › test_page_layout › Checking url: https://www.romlex.hu/api/login.php",
+    "file": "ui/test_page_layout.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "feature": "Page Layout"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "smoke",
+          "positive"
+        ]
+      },
+      {
+        "severity": "critical"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "group": "test_page_layout",
+    "name": "Checking url: https://www.romlex.hu/api/get_partners.php",
+    "path": "ui/test_page_layout.spec.ts › test_page_layout › Checking url: https://www.romlex.hu/api/get_partners.php",
+    "file": "ui/test_page_layout.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "feature": "Page Layout"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "smoke",
+          "positive"
+        ]
+      },
+      {
+        "severity": "critical"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "group": "test_page_layout",
+    "name": "Checking url: https://www.romlex.hu/api/scode.php",
+    "path": "ui/test_page_layout.spec.ts › test_page_layout › Checking url: https://www.romlex.hu/api/scode.php",
+    "file": "ui/test_page_layout.spec.ts",
+    "labels": [
+      {
+        "Browser": "firefox"
+      },
+      {
+        "epic": "Site"
+      },
+      {
+        "feature": "Page Layout"
+      },
+      {
+        "story": "Page loading performance"
+      },
+      {
+        "tag": [
+          "smoke",
+          "positive"
+        ]
+      },
+      {
+        "severity": "critical"
+      }
+    ]
+  }
+]

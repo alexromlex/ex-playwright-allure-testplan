@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testplan generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Testplan generator</h2>
+        <div class="section">
+            <h3>Find tests by filter</h3>
+            <div class="filter-section">
+                <input type="text" 
+                       id="filterInput" 
+                       placeholder="Enter filter in JSON"
+                       class="filter-input" value='{"id": {"eq": "22"}}'>
+                <button onclick="findTests()" class="primary-btn" id="findBtn">
+                    Find Tests
+                </button>
+            </div>
+            <div class="collapse-section">
+                <div class="collapse-header" onclick="toggleCollapse()">
+                    <span>How to use?</span>
+                    <span class="collapse-icon" id="collapseIcon">▼</span>
+                </div>
+                <div class="collapse-content" id="collapseContent">
+                    <div class="doc-text">
+                        <p><strong>You can filter by:</strong></p>
+                        <ul style="list-style: none;">
+                            <li><b>group</b> - test.describe("test_login",...) => <code>{"group": {"eq": {"test_login"}}}</code></li>
+                            <li><b>id</b> - allure.label("id", "22") => <code>{"id": {"eq": "22"}}</code> Parametrized tests have the same id!</li>
+                            <li><b>name</b> - test full name => <code>{"name": {"eq": "test_get_partners_negative"}}</code></li>
+                            <li><b>labels</b> - allure.epic("API") => <code>{"labels": {"epic": {"eq": "API"}}}</code></li>
+                        </ul>
+                        <p><strong>Filter supports operators:</strong></p>
+                        <ul style="list-style: none;">
+                            <li><b>eq, neq</b> - value equal or not equal.</li>
+                            <li><b>in</b> - matches tests where the field contains <b>at least one</b> of the specified values.</li>
+                            <li><b>nin</b> - matches tests where the field contains <b>none</b> of the specified values.</li>
+                            <li><b>all</b> - matches tests where the field contains <b>every</b> specified value.</li>
+                            <li><b>exists</b> - boolean condition.</li>
+                        </ul>
+                        <h4>Filter strategies:</h4>
+                        <ul>
+                            <li>{key:value, key:value, ...} - filtered result by one condition with multiple params</li>
+                            <li>[{key:value}, {key:value, key:value, ...}, ...] - filtered result + filtered result +...</li>
+                        </ul>
+                        <p><em>You can write filter query without "" and ''. Like <code>{id:{eq:22}}</code> Hope it works well!</em></p>
+                        
+                        <p><strong>EXAPMLES:</strong></p>
+                        <ul style="list-style: none;">
+                            <li><b>Testplan: Smoke, Release_02, Regression and Epic=API, exclude test_get_partners_negative test:</b><br />
+                                <code>[
+                                    {"labels": {"tag": {"in": ["Release_02", "smoke"]}}},
+                                    {"labels": {"severity": {"in": ["blocker", "critical"]}}},
+                                    {"labels": {"epic": {"eq": "API"}}, "name": {"neq": "test_get_partners_negative"}}
+                                ]</code>
+                            </li>
+                        </ul>
+                        
+                        <p><em>For best formating use <a href="https://www.jsonformatter.org/" target="_blank">JSON formatter</a></em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="status-container">
+                <div id="status" class="status"></div>
+                <div id="spinner" class="spinner-wrapper" style="display: none;">
+                    <div class="spinner-small"></div>
+                    <span class="ml-2">Running workflow...</span>
+                </div>
+            </div>
+            <div class="last-query" id="lastQuery"></div>
+            <div class="results-section" id="resultsSection">
+                <div class="results-header">
+                    <span>Testplan with:</span>
+                    <span class="results-count" id="resultsCount">0</span>
+                    <span style="margin-left: 8px;">test</span>
+                    <button onclick="runTests()" class="primary-btn flex-right" id="runBtn">
+                        Run testplan
+                    </button>
+                </div>
+                <div class="results-list" id="resultsList">
+                </div>
+            </div>
+        </div>
+
+        <div class="timestamp" id="timestamp"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
