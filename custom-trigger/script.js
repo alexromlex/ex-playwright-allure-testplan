@@ -5,7 +5,7 @@ let currentRunId = null;
 let checkInterval = null;
 const all_tests = [];
 
-const repo = 'ex-playwright_allure_testplan'
+const repo = 'ex-playwright-allure-testplan'
 
 
 // Load saved results on startup
