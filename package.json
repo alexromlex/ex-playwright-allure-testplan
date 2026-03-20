@@ -1,0 +1,30 @@
+{
+  "name": "playright-tests",
+  "version": "1.0.0",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:headed": "npx playwright test --headed",
+    "report": "npx playwright show-report",
+    "allure:results": "npx allure generate allure-results",
+    "allure:report": "npx allure open allure-report --port 40991",
+    "allure:serve": "npx allure serve allure-results --port 33235"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@playwright/test": "^1.58.2"
+  },
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.68",
+    "allure-playwright": "^3.6.0",
+    "dotenv": "^17.3.1"
+  }
+}

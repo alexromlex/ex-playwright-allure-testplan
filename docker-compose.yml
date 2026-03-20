@@ -1,0 +1,32 @@
+services:
+  playwright-tests:
+    build: .
+    container_name: playwright-tests
+    environment:
+      CI: "true"
+      PLAYWRIGHT_BROWSERS_PATH: /ms-playwright
+      TEST_URL: ${TEST_URL:-https://www.romlex.hu}
+      JWT_USERNAME: ${JWT_USERNAME:?JWT_USERNAME is required}
+      JWT_PASSWORD: ${JWT_PASSWORD:?JWT_PASSWORD is required}
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    volumes:
+      - ./tests:/app/tests                                # tests dir
+      - ./allure-results:/app/allure-results              # allure results
+      - ./allure-report:/app/allure-report                # allure report
+      - ./history.jsonl:/app/history.jsonl                # allure history
+      - ./allurerc.mjs:/app/allurerc.mjs                  # allure config
+
+      - ./test-results:/app/test-results                  # playwright test results dir
+      - ./test-results.json:/app/test-results.json        # plawright test results json
+      - ./playwright.config.ts:/app/playwright.config.ts  # playwright config
+      - ./test-list.txt:/app/test-list.txt                # playwright testplan
+      
+      - ./fix-labels.js:/app/fix-labels.js                # clear allure labels
+      - ./testplan_generator:/app/testplan_generator      # testplan generator
+      - ./metadata_tests.json:/app/metadata_tests.json    # test metadata
+
+      - /app/node_modules
+    stdin_open: true
+    tty: true
+    restart: "no"
+    entrypoint: ["tail", "-f", "/dev/null"]

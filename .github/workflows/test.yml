@@ -1,0 +1,140 @@
+name: Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      filter:
+        description: 'Filter string'
+        required: true
+        type: string
+
+jobs:
+  playwright-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+
+      - name: NODEJS - Update testplan, metadata, found_tests by filter query
+        id: update_testplan
+        env:
+          FILTER_JSON: ${{ github.event.inputs.filter }}
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const TestListGenerator = require('./testplan_generator/test-list_generator.js');
+          const rawQuery = process.env.FILTER_JSON || '{}';
+          let query;
+          try {
+            query = JSON.parse(rawQuery);
+          } catch (error) {
+            throw new Error(`Invalid FILTER_JSON: ${rawQuery}`);
+            exit(0)
+          };
+          const geneator = new TestListGenerator();
+          geneator.fetchTestsMetadata();
+          const findedTests = geneator.filterTests(query);
+          if(findedTests.length === 0) exit(0);
+          geneator.generateTestList(findedTests);
+          geneator.writeJson('found_tests.json', { tests: findedTests, query });
+          NODE
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+
+      - name: Build and cache Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      
+      - name: Run tests
+        continue-on-error: true
+        env:
+          JWT_USERNAME: ${{ secrets.JWT_USERNAME || vars.JWT_USERNAME }}
+          JWT_PASSWORD: ${{ secrets.JWT_PASSWORD || vars.JWT_PASSWORD }}
+        run: |
+          docker compose up -d
+          docker exec playwright-tests npx playwright test --test-list test-list.txt
+
+      - name: Clear tests results metadata
+        run: |
+          docker exec playwright-tests node fix-labels.js
+      
+      - name: Update metadata
+        run: |
+          docker exec playwright-tests node testplan_generator/metadata_extractor.js
+      
+      - name: Copy historical files for Pages
+        run: |
+          git fetch origin gh-pages --depth=1 2>/dev/null || echo "Fetch history fail failed"
+          if git ls-tree -r origin/gh-pages 2>/dev/null | grep -q "history.jsonl"; then
+            git checkout origin/gh-pages -- history.jsonl 2>/dev/null || true
+            if [ -f history.jsonl ]; then
+              cat history.jsonl | docker exec -i playwright-tests sh -c 'cat > /app/history.jsonl'
+              echo "=== FILE history.jsonl REPLACED ==="
+            fi
+          else
+            echo "history.jsonl not found in gh-pages (branch is empty or file missing)"
+            touch history.jsonl
+            echo "=== EMPTY FILE history.jsonl CREATED ==="
+          fi
+          
+      - name: Set Allure-report permissions
+        run: |
+          sudo chown -R runner:runner allure-report || \
+          chown -R runner:runner allure-report
+          chmod -R 775 allure-report
+          ls -la allure-report
+
+      - name: Generate Allure report
+        id: generate_report
+        run: |
+
+          echo "=== CHECKING ALLURE CONFIG ==="
+          docker exec playwright-tests cat /app/allurerc.js || echo "config not found"
+
+          echo "=== GENERATING REPORT ==="
+          docker exec playwright-tests allure generate /app/allure-results -o /app/allure-report
+
+          echo "=== CHECKING HISTORY FILE ==="
+          docker exec playwright-tests find /app -name "history.jsonl" 2>/dev/null || echo "no jsonl files"
+
+      - name: Create/Update and copy files in allure-report
+        id: update_files
+        run: |
+          mkdir -p allure-report/custom-trigger
+          cp -r custom-trigger/* allure-report/custom-trigger/
+          echo "=== DIRECTORY custom-trigger COPIED ==="
+  
+          docker exec playwright-tests cat /app/history.jsonl > allure-report/history.jsonl
+          echo "=== FILE history.jsonl COPIED ==="
+          
+          cp found_tests.json allure-report/found_tests.json
+          echo "=== FILE found_tests.json COPIED ==="
+
+          cp metadata_tests.json allure-report/metadata_tests.json
+          echo "=== FILE metadata_tests.json COPIED ==="
+
+      - name: Inject script
+        run: |
+          sed -i 's|</body>|<script src="./custom-trigger/inject.js"></script></body>|' allure-report/index.html
+      
+      - name: Deploy to GitHub Pages
+        if: steps.generate_report.outcome != 'failure' && steps.update_files.outcome != 'failure'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+          destination_dir: ./
+          keep_files: false
